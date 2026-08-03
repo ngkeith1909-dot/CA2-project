@@ -1,0 +1,219 @@
+/* Whole page */
+body {
+    margin: 0;
+    background-color: #f7efe5;
+    color: #30251f;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #6f4e37;
+}
+
+/* Café name and navigation links */
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+/* Café name */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Navigation hover and active page */
+.nav-link:hover,
+.nav-link.active {
+    color: #ffd580 !important;
+}
+
+/* Dropdown box */
+.dropdown-menu {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdown item hover */
+.dropdown-item:hover {
+    background-color: #f7efe5;
+    color: #6f4e37;
+}
+
+/* Current dropdown page */
+.dropdown-item.active {
+    background-color: #6f4e37;
+    color: white;
+}
+
+/* Reviews introduction section */
+.reviews-header {
+    padding: 5rem 1rem;
+    background-color: #fff9f1;
+    border-bottom: 1px solid #dfd0c2;
+}
+
+/* Small label above main heading */
+.section-label {
+    color: #9b5f35;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+
+/* Prevent introduction paragraph from becoming too wide */
+.reviews-header .lead {
+    max-width: 700px;
+}
+
+/* Overall rating box */
+.overall-rating {
+    display: inline-block;
+    padding: 1.3rem 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 5px 18px rgba(72, 48, 36, 0.12);
+}
+
+/* Large average rating number */
+.rating-number {
+    display: block;
+    color: #6f4e37;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Overall rating stars */
+.overall-stars {
+    color: #e3a008;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Filter buttons */
+.filter-btn {
+    padding: 0.6rem 1rem;
+    border: 2px solid #6f4e37;
+    background-color: white;
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+/* Filter button hover effect */
+.filter-btn:hover {
+    border-color: #6f4e37;
+    background-color: #eadbcb;
+    color: #4d3427;
+}
+
+/* Selected filter button */
+.filter-btn.active {
+    border-color: #6f4e37;
+    background-color: #6f4e37;
+    color: white;
+}
+
+/* Keyboard focus */
+.filter-btn:focus-visible {
+    outline: 3px solid #e0a663;
+    outline-offset: 3px;
+}
+
+/* Review count message */
+.review-count {
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+/* Review card */
+.review-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(72, 48, 36, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Review card hover effect */
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 22px rgba(72, 48, 36, 0.16);
+}
+
+/* Card content spacing */
+.review-card .card-body {
+    padding: 1.5rem;
+}
+
+/* Customer initials circle */
+.customer-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+    border-radius: 50%;
+
+    background-color: #6f4e37;
+    color: white;
+    font-weight: bold;
+}
+
+/* Review date */
+.review-date {
+    color: #766b65;
+    font-size: 0.9rem;
+}
+
+/* Review stars */
+.review-stars {
+    color: #e3a008;
+    font-size: 1.1rem;
+}
+
+/* Review category badge */
+.review-badge {
+    background-color: #eadbcb;
+    color: #5b3d2b;
+}
+
+/* No reviews message */
+.no-reviews {
+    padding: 4rem 1rem;
+}
+
+/* No reviews icon */
+.no-reviews i {
+    color: #6f4e37;
+    font-size: 3rem;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #4b3225;
+    color: white;
+}
+
+/* Mobile screen adjustments */
+@media screen and (max-width: 767px) {
+
+    .reviews-header {
+        padding: 3.5rem 1rem;
+    }
+
+    .reviews-header h1 {
+        font-size: 2rem;
+    }
+
+    .overall-rating {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .filter-btn {
+        flex: 1 1 120px;
+    }
+}
