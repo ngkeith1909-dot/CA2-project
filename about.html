@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ABC Café | Contact Us</title>
+    <title>ABC Café | Home</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,8 @@
             background-color: #F7EFE5;
             font-family: Arial, sans-serif;
         }
+
+        /* Navbar */
 
         .navbar {
             background-color: #6F4E37;
@@ -41,7 +43,7 @@
         .dropdown-menu {
             border: none;
             border-radius: 10px;
-            box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
         }
 
         .dropdown-item:hover {
@@ -49,31 +51,26 @@
             color: #6F4E37;
         }
 
-        .contact-container {
+        /* Hero Section */
+
+        .hero {
             background-color: white;
             margin-top: 50px;
-            margin-bottom: 50px;
-            padding: 40px;
+            padding: 60px 40px;
             border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
         }
 
-        .contact-title {
+        .hero h1 {
             color: #4B2E2B;
+            font-size: 50px;
             font-weight: bold;
         }
 
-        .contact-info {
-            background-color: #6F4E37;
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            height: 100%;
-        }
-
-        .contact-info i {
-            color: #FFD580;
-            margin-right: 8px;
+        .hero p {
+            color: #777;
+            font-size: 18px;
         }
 
         .btn-coffee {
@@ -87,10 +84,48 @@
             color: white;
         }
 
-        #thankYouMessage {
-            display: none;
-            margin-top: 20px;
+        /* Features */
+
+        .features {
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
+
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            height: 100%;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card i {
+            color: #6F4E37;
+            font-size: 40px;
+        }
+
+        .feature-card h3 {
+            color: #4B2E2B;
+            margin-top: 15px;
+        }
+
+        /* Welcome Section */
+
+        .welcome {
+            background-color: white;
+            padding: 40px;
+            margin-bottom: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome h2 {
+            color: #4B2E2B;
+            font-weight: bold;
+        }
+
+        /* Footer */
 
         footer {
             background-color: #6F4E37;
@@ -99,404 +134,416 @@
             padding: 20px;
         }
 
+        footer p {
+            margin: 0;
+        }
+
     </style>
 
 </head>
 
 <body>
 
-<!-- Navigation -->
+    <!-- Navigation -->
 
-<nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
 
-    <div class="container">
+        <div class="container">
 
-        <a class="navbar-brand" href="index.html">
-            <i class="bi bi-cup-hot-fill"></i> ABC Café
-        </a>
+            <!-- Logo -->
 
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-cup-hot-fill"></i>
+                ABC Café
+            </a>
 
-            <span class="navbar-toggler-icon"></span>
+            <!-- Mobile Button -->
 
-        </button>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
 
-        <div class="collapse navbar-collapse" id="mainNavbar">
+                <span class="navbar-toggler-icon"></span>
 
-            <ul class="navbar-nav ms-auto">
+            </button>
 
-                <!-- Home -->
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">
-                        <i class="bi bi-house-fill"></i> Home
-                    </a>
-                </li>
+            <!-- Navigation Links -->
 
-                <!-- Menu -->
-                <li class="nav-item dropdown">
+            <div class="collapse navbar-collapse" id="mainNavbar">
 
-                    <a class="nav-link dropdown-toggle"
-                       href="#"
-                       role="button"
-                       data-bs-toggle="dropdown">
+                <ul class="navbar-nav ms-auto">
 
-                        <i class="bi bi-book-fill"></i> Menu
+                    <!-- Home -->
 
-                    </a>
+                    <li class="nav-item">
 
-                    <ul class="dropdown-menu">
+                        <a class="nav-link active" href="index.html">
+                            <i class="bi bi-house-fill"></i>
+                            Home
+                        </a>
 
-                        <li>
-                            <a class="dropdown-item" href="menu.html">
-                                <i class="bi bi-book-fill me-2"></i>
-                                Food & Drinks
-                            </a>
-                        </li>
+                    </li>
 
-                        <li>
-<<<<<<< HEAD:contactus.html
-                            <a class="dropdown-item" href="specials.html">
-                                <i class="bi bi-megaphone-fill me-2"></i>
-                                Events & Specials
-=======
-                            <a class="dropdown-item" href="events.html">
-                                <i class="bi bi-megaphone-fill me-2"></i> Events & Specials
->>>>>>> 20f2675515a954e628cfa85ad088b37cd5f8539a:about.html
-                            </a>
-                        </li>
+                    <!-- Menu -->
 
-                    </ul>
+                    <li class="nav-item dropdown">
 
-                </li>
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
 
-                <!-- Gallery -->
-                <li class="nav-item dropdown">
+                            <i class="bi bi-book-fill"></i>
+                            Menu
 
-                    <a class="nav-link dropdown-toggle"
-                       href="#"
-                       role="button"
-                       data-bs-toggle="dropdown">
+                        </a>
 
-                        <i class="bi bi-camera-fill"></i> Gallery
+                        <ul class="dropdown-menu">
 
-                    </a>
+                            <li>
 
-                    <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="menu.html">
 
-                        <li>
-                            <a class="dropdown-item" href="gallery.html">
-                                <i class="bi bi-images me-2"></i>
-                                Photo Gallery
-                            </a>
-                        </li>
+                                    <i class="bi bi-book-fill me-2"></i>
+                                    Food & Drinks
 
-                        <li>
-                            <a class="dropdown-item" href="about.html">
-                                <i class="bi bi-people-fill me-2"></i>
-                                About Us
-                            </a>
-                        </li>
+                                </a>
 
-                    </ul>
+                            </li>
 
-                </li>
+                            <li>
 
-                <!-- Reviews -->
-                <li class="nav-item dropdown">
+                                <a class="dropdown-item" href="EventsandSpecials.html">
 
-                    <a class="nav-link dropdown-toggle"
-                       href="#"
-                       role="button"
-                       data-bs-toggle="dropdown">
+                                    <i class="bi bi-megaphone-fill me-2"></i>
+                                    Events & Specials
 
-                        <i class="bi bi-star-fill"></i> Reviews
+                                </a>
 
-                    </a>
+                            </li>
 
-                    <ul class="dropdown-menu">
+                        </ul>
 
-                        <li>
-                            <a class="dropdown-item" href="reviews.html">
-                                <i class="bi bi-chat-square-quote-fill me-2"></i>
-                                Customer Reviews
-                            </a>
-                        </li>
+                    </li>
 
-                        <li>
-                            <a class="dropdown-item" href="faq.html">
-                                <i class="bi bi-question-circle-fill me-2"></i>
-                                FAQ
-                            </a>
-                        </li>
+                    <!-- Gallery -->
 
-                    </ul>
+                    <li class="nav-item dropdown">
 
-                </li>
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
 
-                <!-- Contact -->
-                <li class="nav-item dropdown">
+                            <i class="bi bi-camera-fill"></i>
+                            Gallery
 
-                    <a class="nav-link dropdown-toggle active"
-                       href="#"
-                       role="button"
-                       data-bs-toggle="dropdown">
+                        </a>
 
-                        <i class="bi bi-envelope-fill"></i> Contact
+                        <ul class="dropdown-menu">
 
-                    </a>
+                            <li>
 
-                    <ul class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="gallery.html">
 
-                        <li>
-                            <a class="dropdown-item" href="contact.html">
-                                <i class="bi bi-envelope-fill me-2"></i>
-                                Contact Us
-                            </a>
-                        </li>
+                                    <i class="bi bi-images me-2"></i>
+                                    Photo Gallery
 
-                        <li>
-                            <a class="dropdown-item" href="reservations.html">
-                                <i class="bi bi-calendar-check-fill me-2"></i>
-                                Reservations
-                            </a>
-                        </li>
+                                </a>
 
-                        <li>
-                            <a class="dropdown-item" href="location.html">
-                                <i class="bi bi-geo-alt-fill me-2"></i>
-                                Location & Hours
-                            </a>
-                        </li>
+                            </li>
 
-                    </ul>
+                            <li>
 
-                </li>
+                                <a class="dropdown-item" href="Aboutus.html">
 
-            </ul>
+                                    <i class="bi bi-people-fill me-2"></i>
+                                    About Us
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- Reviews -->
+
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            <i class="bi bi-star-fill"></i>
+                            Reviews
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+
+                                <a class="dropdown-item" href="Reviews.html">
+
+                                    <i class="bi bi-chat-square-quote-fill me-2"></i>
+                                    Customer Reviews
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a class="dropdown-item" href="FAQ.html">
+
+                                    <i class="bi bi-question-circle-fill me-2"></i>
+                                    FAQ
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- Contact -->
+
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            <i class="bi bi-envelope-fill"></i>
+                            Contact
+
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+
+                            <li>
+
+                                <a class="dropdown-item" href="contactus.html">
+
+                                    <i class="bi bi-envelope-fill me-2"></i>
+                                    Contact Us
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a class="dropdown-item" href="Reservations.html">
+
+                                    <i class="bi bi-calendar-check-fill me-2"></i>
+                                    Reservations
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a class="dropdown-item" href="LocationandHours.html">
+
+                                    <i class="bi bi-geo-alt-fill me-2"></i>
+                                    Location & Hours
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
 
         </div>
 
-    </div>
+    </nav>
 
-</nav>
 
-<!-- Contact Section -->
+    <!-- Main Content -->
 
-<div class="container">
+    <main class="container">
 
-    <div class="contact-container">
+        <!-- Hero Section -->
 
-        <div class="text-center mb-5">
+        <section class="hero">
 
-            <h1 class="contact-title">
-                <i class="bi bi-envelope-fill"></i>
-                Contact Us
+            <h1>
+                <i class="bi bi-cup-hot-fill"></i>
+                Welcome to ABC Café
             </h1>
 
-            <p>
-                Have a question? Send us a message and we will be happy to help.
+            <p class="mt-3">
+                Fresh food, delicious coffee and great moments.
             </p>
 
-        </div>
+            <div class="mt-4">
 
-        <div class="row">
+                <a href="menu.html" class="btn btn-coffee btn-lg me-2">
+                    <i class="bi bi-book-fill"></i>
+                    View Menu
+                </a>
 
-            <!-- Contact Form -->
+                <a href="contactus.html" class="btn btn-outline-dark btn-lg">
+                    <i class="bi bi-envelope-fill"></i>
+                    Contact Us
+                </a>
 
-            <div class="col-md-7 mb-4">
+            </div>
 
-                <h2>Send Us a Message</h2>
+        </section>
 
-                <form id="contactForm">
 
-                    <!-- Name -->
+        <!-- Features -->
 
-                    <div class="mb-3">
+        <section class="features">
 
-                        <label for="name" class="form-label">
-                            Name
-                        </label>
+            <div class="row g-4">
 
-                        <input
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="Enter your name">
+                <!-- Fresh Food -->
 
-                    </div>
+                <div class="col-md-4">
 
-                    <!-- Email -->
+                    <div class="feature-card">
 
-                    <div class="mb-3">
+                        <i class="bi bi-egg-fried"></i>
 
-                        <label for="email" class="form-label">
-                            Email
-                        </label>
+                        <h3>Fresh Food</h3>
 
-                        <input
-                            type="email"
-                            class="form-control"
-                            id="email"
-                            placeholder="Enter your email">
+                        <p>
+                            Our meals are freshly prepared using quality
+                            ingredients every day.
+                        </p>
 
                     </div>
 
-                    <!-- Message -->
+                </div>
 
-                    <div class="mb-3">
 
-                        <label for="message" class="form-label">
-                            Message
-                        </label>
+                <!-- Coffee -->
 
-                        <textarea
-                            class="form-control"
-                            id="message"
-                            rows="5"
-                            placeholder="Enter your message"></textarea>
+                <div class="col-md-4">
+
+                    <div class="feature-card">
+
+                        <i class="bi bi-cup-hot-fill"></i>
+
+                        <h3>Great Coffee</h3>
+
+                        <p>
+                            Enjoy freshly brewed coffee prepared for you
+                            by our friendly café team.
+                        </p>
 
                     </div>
 
-                    <!-- Error Message -->
+                </div>
 
-                    <div
-                        id="errorMessage"
-                        class="alert alert-danger d-none">
+
+                <!-- Atmosphere -->
+
+                <div class="col-md-4">
+
+                    <div class="feature-card">
+
+                        <i class="bi bi-heart-fill"></i>
+
+                        <h3>Cozy Atmosphere</h3>
+
+                        <p>
+                            Relax and enjoy your meal in our comfortable
+                            and welcoming café.
+                        </p>
+
                     </div>
-
-                    <!-- Submit Button -->
-
-                    <button
-                        type="submit"
-                        class="btn btn-coffee">
-
-                        <i class="bi bi-send-fill"></i>
-                        Send Message
-
-                    </button>
-
-                </form>
-
-                <!-- Thank You Message -->
-
-                <div
-                    id="thankYouMessage"
-                    class="alert alert-success">
-
-                    <i class="bi bi-check-circle-fill"></i>
-
-                    Thank you for contacting ABC Café!
-                    We will get back to you soon.
 
                 </div>
 
             </div>
 
-            <!-- Contact Details -->
+        </section>
 
-            <div class="col-md-5">
 
-                <div class="contact-info">
+        <!-- About / Welcome Section -->
 
-                    <h2>Our Contact Details</h2>
+        <section class="welcome">
 
-                    <hr>
+            <div class="row align-items-center">
+
+                <div class="col-md-8">
+
+                    <h2>Come Visit Us</h2>
 
                     <p>
-                        <i class="bi bi-geo-alt-fill"></i>
-                        123 Café Street, Singapore
+                        ABC Café is the perfect place to enjoy delicious
+                        food, freshly brewed coffee and desserts with
+                        friends and family.
                     </p>
 
                     <p>
-                        <i class="bi bi-telephone-fill"></i>
-                        +65 6123 4567
+                        Whether you are stopping by for breakfast, lunch
+                        or a relaxing cup of coffee, we look forward to
+                        welcoming you.
                     </p>
 
-                    <p>
-                        <i class="bi bi-envelope-fill"></i>
-                        contact@abccafe.com
-                    </p>
+                </div>
 
-                    <p>
-                        <i class="bi bi-clock-fill"></i>
-                        Monday – Sunday
-                    </p>
+                <div class="col-md-4 text-center">
 
-                    <p>
-                        8:00 AM – 10:00 PM
-                    </p>
+                    <i
+                        class="bi bi-cup-hot-fill"
+                        style="font-size: 100px; color: #6F4E37;">
+                    </i>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </div>
+    </main>
 
-</div>
 
-<!-- Footer -->
+    <!-- Footer -->
 
-<footer>
+    <footer>
 
-    <p>
-        <i class="bi bi-cup-hot-fill"></i>
-        © 2026 ABC Café
-    </p>
+        <p>
+            <i class="bi bi-cup-hot-fill"></i>
+            © 2026 ABC Café
+        </p>
 
-</footer>
+    </footer>
 
-<!-- JavaScript -->
 
-<script>
+    <!-- Bootstrap JavaScript -->
 
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-
-        event.preventDefault();
-
-        let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
-        let message = document.getElementById("message").value;
-
-        let errorMessage = document.getElementById("errorMessage");
-        let thankYouMessage = document.getElementById("thankYouMessage");
-
-        if (name === "" || email === "" || message === "") {
-
-            errorMessage.textContent =
-                "Please fill in all fields.";
-
-            errorMessage.classList.remove("d-none");
-
-            thankYouMessage.style.display = "none";
-
-        }
-
-        else {
-
-            errorMessage.classList.add("d-none");
-
-            thankYouMessage.style.display = "block";
-
-            document.getElementById("contactForm").reset();
-
-        }
-
-    });
-
-</script>
-
-<!-- Bootstrap JavaScript -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
