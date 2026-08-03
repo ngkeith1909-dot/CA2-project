@@ -1,0 +1,141 @@
+body {
+    background-color: #f7efe5;
+    color: #3f2d20;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #6f4e37;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-brand:hover,
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffd580;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+    background-color: #f7efe5;
+    color: #6f4e37;
+}
+
+.page-header {
+    background-color: #ead4bd;
+    padding: 55px 0;
+}
+
+.page-header h1 {
+    color: #6f4e37;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.page-header p {
+    margin-bottom: 0;
+}
+
+.page-icon {
+    color: #c97f45;
+    font-size: 3rem;
+}
+
+.faq-list {
+    display: grid;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(70, 44, 27, 0.11);
+    overflow: hidden;
+}
+
+.faq-question {
+    align-items: center;
+    background-color: white;
+    border: none;
+    color: #4b3621;
+    display: flex;
+    font-size: 1.05rem;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 20px 22px;
+    text-align: left;
+    width: 100%;
+}
+
+.faq-question:hover,
+.faq-question[aria-expanded="true"] {
+    background-color: #f4dfc9;
+    color: #6f4e37;
+}
+
+.faq-icon {
+    color: #c97f45;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    transition: transform 0.2s ease;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    border-top: 1px solid #ead4bd;
+    padding: 18px 22px;
+}
+
+.faq-answer p {
+    margin-bottom: 0;
+}
+
+.contact-box {
+    background-color: #6f4e37;
+    border-radius: 18px;
+    color: white;
+    padding: 35px 20px;
+}
+
+.contact-box h2 {
+    font-weight: bold;
+}
+
+.contact-icon {
+    color: #ffd580;
+    font-size: 2.5rem;
+}
+
+.contact-button {
+    background-color: #ffd580;
+    color: #4b3621;
+    font-weight: bold;
+}
+
+.contact-button:hover {
+    background-color: #f1bd5e;
+    color: #4b3621;
+}
+
+.site-footer {
+    background-color: #4b3621;
+    color: white;
+    padding: 25px 0;
+}
