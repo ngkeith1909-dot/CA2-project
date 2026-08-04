@@ -55,43 +55,48 @@
             font-weight: bold;
         }
 
+        .gallery-subtitle {
+            color: #6F4E37;
+        }
+
         .gallery-card {
             background-color: white;
-            padding: 10px;
-            border-radius: 15px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-            text-align: center;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             height: 100%;
         }
 
         .gallery-img {
             width: 100%;
-            height: 230px;
+            height: 250px;
             object-fit: cover;
-            border-radius: 10px;
             cursor: pointer;
             transition: 0.3s;
         }
 
         .gallery-img:hover {
-            transform: scale(1.03);
+            transform: scale(1.04);
         }
 
-        .gallery-card h2 {
-            color: #6F4E37;
-            font-size: 20px;
-            margin-top: 12px;
+        .gallery-text {
+            padding: 18px;
+            text-align: center;
         }
 
-        .gallery-card p {
-            color: gray;
-            font-size: 14px;
+        .gallery-text h2 {
+            color: #4B2E2B;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .gallery-text p {
+            color: #666;
+            margin-bottom: 0;
         }
 
         #modalImage {
             width: 100%;
-            max-height: 600px;
-            object-fit: cover;
             border-radius: 10px;
         }
 
@@ -104,7 +109,6 @@
         }
 
     </style>
-
 </head>
 
 <body>
@@ -136,15 +140,11 @@
 
             <ul class="navbar-nav ms-auto">
 
-                <!-- Home -->
-
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">
                         <i class="bi bi-house-fill"></i> Home
                     </a>
                 </li>
-
-                <!-- Menu -->
 
                 <li class="nav-item dropdown">
 
@@ -154,7 +154,6 @@
                        data-bs-toggle="dropdown">
 
                         <i class="bi bi-book-fill"></i> Menu
-
                     </a>
 
                     <ul class="dropdown-menu">
@@ -177,8 +176,6 @@
 
                 </li>
 
-                <!-- Gallery -->
-
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle active"
@@ -187,7 +184,6 @@
                        data-bs-toggle="dropdown">
 
                         <i class="bi bi-camera-fill"></i> Gallery
-
                     </a>
 
                     <ul class="dropdown-menu">
@@ -210,8 +206,6 @@
 
                 </li>
 
-                <!-- Reviews -->
-
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle"
@@ -220,21 +214,18 @@
                        data-bs-toggle="dropdown">
 
                         <i class="bi bi-star-fill"></i> Reviews
-
                     </a>
 
                     <ul class="dropdown-menu">
 
                         <li>
                             <a class="dropdown-item" href="reviews.html">
-                                <i class="bi bi-chat-square-quote-fill me-2"></i>
                                 Customer Reviews
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="faq.html">
-                                <i class="bi bi-question-circle-fill me-2"></i>
                                 FAQ
                             </a>
                         </li>
@@ -242,8 +233,6 @@
                     </ul>
 
                 </li>
-
-                <!-- Contact -->
 
                 <li class="nav-item dropdown">
 
@@ -253,28 +242,24 @@
                        data-bs-toggle="dropdown">
 
                         <i class="bi bi-envelope-fill"></i> Contact
-
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-end">
 
                         <li>
                             <a class="dropdown-item" href="contact.html">
-                                <i class="bi bi-envelope-fill me-2"></i>
                                 Contact Us
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="reservations.html">
-                                <i class="bi bi-calendar-check-fill me-2"></i>
                                 Reservations
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="location.html">
-                                <i class="bi bi-geo-alt-fill me-2"></i>
                                 Location & Hours
                             </a>
                         </li>
@@ -298,225 +283,171 @@
     <div class="text-center mb-5">
 
         <h1 class="gallery-title">
-            <i class="bi bi-camera-fill"></i> Our Gallery
+            <i class="bi bi-camera-fill"></i>
+            Our Gallery
         </h1>
 
-        <p>
-            Take a look at our food, café atmosphere,
-            celebrations and special moments.
+        <p class="gallery-subtitle">
+            A glimpse of our café, our people, our food and the moments we cherish.
         </p>
 
     </div>
 
-    <!-- Gallery Images -->
+    <!-- Gallery Cards -->
 
     <div class="row g-4">
 
-        <!-- 1 Cafe Interior -->
+        <!-- Cafe Interior -->
 
         <div class="col-md-4">
 
             <div class="gallery-card">
 
-                <img src="images/cafe-interior.jpg"
-                     class="gallery-img"
-                     alt="ABC Café Interior"
-                     onclick="openImage(this)">
+                <img
+                    src="https://miro.medium.com/v2/resize:fit:1400/0*1NDihRw2P7mPKnLO"
+                    class="gallery-img"
+                    alt="Cafe Interior"
+                    onclick="openImage(this)">
 
-                <h2>Our Café</h2>
+                <div class="gallery-text">
 
-                <p>
-                    A warm and comfortable place to relax with friends and family.
-                </p>
+                    <h2>Café Interior</h2>
+
+                    <p>
+                        A warm and cosy space designed for great coffee and good conversations.
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
-        <!-- 2 Coffee -->
+        <!-- Barista -->
 
         <div class="col-md-4">
 
             <div class="gallery-card">
 
-                <img src="images/latte.jpg"
-                     class="gallery-img"
-                     alt="Fresh Café Latte"
-                     onclick="openImage(this)">
+                <img
+                    src="https://shop.anchorcoffeeco.com/cdn/shop/articles/baristia800x789.jpg?v=1522163674"
+                    class="gallery-img"
+                    alt="Our Barista"
+                    onclick="openImage(this)">
 
-                <h2>Freshly Brewed Coffee</h2>
+                <div class="gallery-text">
 
-                <p>
-                    One of our freshly prepared café lattes.
-                </p>
+                    <h2>Our Barista</h2>
+
+                    <p>
+                        Passionate and skilled baristas crafting the perfect cup for you.
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
-        <!-- 3 Food -->
+        <!-- Other Branches -->
 
         <div class="col-md-4">
 
             <div class="gallery-card">
 
-                <img src="images/burger.jpg"
-                     class="gallery-img"
-                     alt="Chicken Burger"
-                     onclick="openImage(this)">
+                <img
+                    src="https://media.timeout.com/images/106022220/750/562/image.jpg"
+                    class="gallery-img"
+                    alt="Our Other Branches"
+                    onclick="openImage(this)">
 
-                <h2>Delicious Meals</h2>
+                <div class="gallery-text">
 
-                <p>
-                    Fresh meals prepared for our customers every day.
-                </p>
+                    <h2>Our Other Branches</h2>
+
+                    <p>
+                        ABC Café is growing! Visit our other branches near you.
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
-        <!-- 4 Birthday -->
+        <!-- Desserts -->
 
         <div class="col-md-4">
 
             <div class="gallery-card">
 
-                <img src="images/birthday.jpg"
-                     class="gallery-img"
-                     alt="Child Birthday Celebration"
-                     onclick="openImage(this)">
+                <img
+                    src="https://eatbook.sg/wp-content/uploads/2023/04/Plan-A-Dessert-Cafe-sweet-bingsu.jpg"
+                    class="gallery-img"
+                    alt="Famous Desserts"
+                    onclick="openImage(this)">
 
-                <h2>Birthday Celebrations</h2>
+                <div class="gallery-text">
 
-                <p>
-                    Families celebrating a special birthday at ABC Café.
-                </p>
+                    <h2>Famous Desserts</h2>
+
+                    <p>
+                        Sweet treats that our customers love and keep coming back for.
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
-        <!-- 5 Grand Opening -->
+        <!-- People Eating 1 -->
 
         <div class="col-md-4">
 
             <div class="gallery-card">
 
-                <img src="images/grand-opening.jpg"
-                     class="gallery-img"
-                     alt="ABC Café Grand Opening"
-                     onclick="openImage(this)">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJNRi00EeCJ37MVDAU6kewV_0jlactAUAAZbohIXs-5Q&s=10"
+                    class="gallery-img"
+                    alt="Friends Eating Together"
+                    onclick="openImage(this)">
 
-                <h2>Grand Opening</h2>
+                <div class="gallery-text">
 
-                <p>
-                    A memorable moment from the opening of ABC Café.
-                </p>
+                    <h2>Good Food, Good Company</h2>
+
+                    <p>
+                        Nothing beats enjoying delicious food with the people you love.
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
-        <!-- 6 Award -->
+        <!-- People Eating 2 -->
 
         <div class="col-md-4">
 
             <div class="gallery-card">
 
-                <img src="images/award.jpg"
-                     class="gallery-img"
-                     alt="ABC Café Award Ceremony"
-                     onclick="openImage(this)">
+                <img
+                    src="https://images.unsplash.com/photo-1592861956120-e524fc739696?fm=jpg&q=60&w=3000&auto=format&fit=crop"
+                    class="gallery-img"
+                    alt="Friends Dining Together"
+                    onclick="openImage(this)">
 
-                <h2>Our Awards</h2>
+                <div class="gallery-text">
 
-                <p>
-                    Celebrating the awards and achievements earned by our café.
-                </p>
+                    <h2>Memorable Moments</h2>
 
-            </div>
+                    <p>
+                        Great meals are even better when they are shared with friends and family.
+                    </p>
 
-        </div>
-
-        <!-- 7 Barista -->
-
-        <div class="col-md-4">
-
-            <div class="gallery-card">
-
-                <img src="images/barista.jpg"
-                     class="gallery-img"
-                     alt="Barista Making Coffee"
-                     onclick="openImage(this)">
-
-                <h2>Our Baristas</h2>
-
-                <p>
-                    Our baristas carefully preparing every cup of coffee.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- 8 Friends -->
-
-        <div class="col-md-4">
-
-            <div class="gallery-card">
-
-                <img src="images/friends.jpg"
-                     class="gallery-img"
-                     alt="Friends Dining at ABC Café"
-                     onclick="openImage(this)">
-
-                <h2>Time With Friends</h2>
-
-                <p>
-                    Customers enjoying food and drinks together at the café.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- 9 Desserts -->
-
-        <div class="col-md-4">
-
-            <div class="gallery-card">
-
-                <img src="images/desserts.jpg"
-                     class="gallery-img"
-                     alt="ABC Café Dessert Display"
-                     onclick="openImage(this)">
-
-                <h2>Fresh Desserts</h2>
-
-                <p>
-                    A selection of freshly prepared desserts from our café.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- 10 Cafe Exterior -->
-
-        <div class="col-md-4">
-
-            <div class="gallery-card">
-
-                <img src="images/cafe-exterior.jpg"
-                     class="gallery-img"
-                     alt="ABC Café Exterior"
-                     onclick="openImage(this)">
-
-                <h2>Visit ABC Café</h2>
-
-                <p>
-                    The entrance to our café where we welcome our customers.
-                </p>
+                </div>
 
             </div>
 
@@ -526,7 +457,7 @@
 
 </div>
 
-<!-- Image Popup -->
+<!-- Image Modal -->
 
 <div class="modal fade" id="imageModal" tabindex="-1">
 
@@ -551,9 +482,10 @@
 
             <div class="modal-body">
 
-                <img id="modalImage"
-                     src="images/cafe-interior.jpg"
-                     alt="Gallery image">
+                <img
+                    id="modalImage"
+                    src=""
+                    alt="Gallery Image">
 
             </div>
 
@@ -595,7 +527,9 @@ function openImage(image) {
     );
 
     modal.show();
+
 }
+
 
 </script>
 
