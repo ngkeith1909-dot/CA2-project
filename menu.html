@@ -60,23 +60,24 @@
 
         .menu-title {
             color: #4B2E2B;
-            font-weight: bold;
             font-size: 45px;
+            font-weight: bold;
         }
 
         .subtitle {
             color: #A67B5B;
+            margin-bottom: 30px;
         }
 
         .filter-btn {
-            background-color: #A67B5B;
+            background-color: #6F4E37;
             color: white;
             border: none;
             margin: 5px;
         }
 
         .filter-btn:hover {
-            background-color: #6F4E37;
+            background-color: #A67B5B;
             color: white;
         }
 
@@ -85,25 +86,21 @@
             padding: 20px 0;
         }
 
-        .menu-item:hover {
-            background-color: #FFF8F2;
-        }
-
         .menu-item img {
-            width: 110px;
-            height: 110px;
+            width: 120px;
+            height: 120px;
             object-fit: cover;
             border-radius: 10px;
         }
 
         .price {
             color: #D17B00;
-            font-size: 22px;
+            font-size: 21px;
             font-weight: bold;
         }
 
         .description {
-            color: gray;
+            color: #666;
             font-style: italic;
         }
 
@@ -130,13 +127,11 @@
             <i class="bi bi-cup-hot-fill"></i> ABC Café
         </a>
 
-        <button class="navbar-toggler"
+        <button
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+            data-bs-target="#mainNavbar">
 
             <span class="navbar-toggler-icon"></span>
 
@@ -147,19 +142,23 @@
             <ul class="navbar-nav ms-auto">
 
                 <!-- Home -->
+
                 <li class="nav-item">
+
                     <a class="nav-link" href="index.html">
                         <i class="bi bi-house-fill"></i> Home
                     </a>
+
                 </li>
 
                 <!-- Menu -->
+
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle active"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown">
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
 
                         <i class="bi bi-book-fill"></i> Menu
 
@@ -175,7 +174,7 @@
                         </li>
 
                         <li>
-                            <a class="dropdown-item" href="specials.html">
+                            <a class="dropdown-item" href="events.html">
                                 <i class="bi bi-megaphone-fill me-2"></i>
                                 Events & Specials
                             </a>
@@ -186,12 +185,13 @@
                 </li>
 
                 <!-- Gallery -->
+
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown">
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
 
                         <i class="bi bi-camera-fill"></i> Gallery
 
@@ -201,12 +201,14 @@
 
                         <li>
                             <a class="dropdown-item" href="gallery.html">
+                                <i class="bi bi-images me-2"></i>
                                 Photo Gallery
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="about.html">
+                                <i class="bi bi-people-fill me-2"></i>
                                 About Us
                             </a>
                         </li>
@@ -216,12 +218,13 @@
                 </li>
 
                 <!-- Reviews -->
+
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown">
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
 
                         <i class="bi bi-star-fill"></i> Reviews
 
@@ -231,12 +234,14 @@
 
                         <li>
                             <a class="dropdown-item" href="reviews.html">
+                                <i class="bi bi-chat-square-quote-fill me-2"></i>
                                 Customer Reviews
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="faq.html">
+                                <i class="bi bi-question-circle-fill me-2"></i>
                                 FAQ
                             </a>
                         </li>
@@ -246,12 +251,13 @@
                 </li>
 
                 <!-- Contact -->
+
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown">
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
 
                         <i class="bi bi-envelope-fill"></i> Contact
 
@@ -261,18 +267,21 @@
 
                         <li>
                             <a class="dropdown-item" href="contact.html">
+                                <i class="bi bi-envelope-fill me-2"></i>
                                 Contact Us
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="reservations.html">
+                                <i class="bi bi-calendar-check-fill me-2"></i>
                                 Reservations
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="location.html">
+                                <i class="bi bi-geo-alt-fill me-2"></i>
                                 Location & Hours
                             </a>
                         </li>
@@ -295,14 +304,14 @@
 
     <div class="menu-container">
 
-        <div class="text-center mb-4">
+        <div class="text-center">
 
             <h1 class="menu-title">
                 ☕ Our Menu
             </h1>
 
             <p class="subtitle">
-                Freshly prepared every day
+                Freshly prepared with quality ingredients
             </p>
 
         </div>
@@ -311,78 +320,90 @@
 
         <div class="text-center mb-4">
 
-            <button class="btn filter-btn" onclick="filterMenu('all')">
+            <button class="btn filter-btn"
+                    onclick="filterMenu('all')">
                 All
             </button>
 
-            <button class="btn filter-btn" onclick="filterMenu('drink')">
-                Drinks
-            </button>
-
-            <button class="btn filter-btn" onclick="filterMenu('breakfast')">
+            <button class="btn filter-btn"
+                    onclick="filterMenu('breakfast')">
                 Breakfast
             </button>
 
-            <button class="btn filter-btn" onclick="filterMenu('main')">
+            <button class="btn filter-btn"
+                    onclick="filterMenu('main')">
                 Main Dishes
             </button>
 
-            <button class="btn filter-btn" onclick="filterMenu('dessert')">
+            <button class="btn filter-btn"
+                    onclick="filterMenu('dessert')">
                 Desserts
             </button>
 
         </div>
 
-        <!-- Menu Items -->
-
         <div class="row">
+
+            <!-- LEFT COLUMN -->
 
             <div class="col-md-6">
 
-                <!-- Café Latte -->
+                <!-- Eggs & Bacon -->
 
-                <div class="menu-item drink d-flex gap-3">
+                <div class="menu-item breakfast d-flex gap-3">
 
-                    <img src="images/latte.jpg" alt="Café Latte">
+                    <img
+                        src="https://flinderslanecafe.com.au/cdn/shop/articles/Big_20Brekkies_20at_20Flinders_20Lane_compressed_6da88c90-09e5-4a3f-9d2a-dfb79ebbcced.jpg?v=1773196330"
+                        alt="Eggs and Bacon Brekkie">
 
                     <div class="flex-grow-1">
 
                         <div class="d-flex justify-content-between">
 
-                            <h2 class="h5">Café Latte</h2>
+                            <h2 class="h5">
+                                Eggs & Bacon Brekkie
+                            </h2>
 
-                            <span class="price">$6.50</span>
+                            <span class="price">
+                                $13.90
+                            </span>
 
                         </div>
 
                         <p class="description">
-                            Rich espresso blended with silky steamed milk
-                            and finished with a light layer of creamy milk foam.
+                            Golden eggs and crispy bacon served
+                            together for a hearty morning favourite.
                         </p>
 
                     </div>
 
                 </div>
 
-                <!-- Butter Croissant -->
+                <!-- Avocado Toast -->
 
                 <div class="menu-item breakfast d-flex gap-3">
 
-                    <img src="images/croissant.jpg" alt="Butter Croissant">
+                    <img
+                        src="https://eightforestlane.com/wp-content/uploads/2024/01/Smashed-Avocado-Toast_SQ-2.jpg"
+                        alt="Avocado Toast">
 
                     <div class="flex-grow-1">
 
                         <div class="d-flex justify-content-between">
 
-                            <h2 class="h5">Butter Croissant</h2>
+                            <h2 class="h5">
+                                Avocado Toast
+                            </h2>
 
-                            <span class="price">$4.50</span>
+                            <span class="price">
+                                $11.90
+                            </span>
 
                         </div>
 
                         <p class="description">
-                            Freshly baked buttery croissant with a crisp
-                            golden crust and a soft, flaky centre.
+                            Creamy smashed avocado served on crisp
+                            toast for a fresh and vibrant bite.
                         </p>
 
                     </div>
@@ -393,76 +414,93 @@
 
                 <div class="menu-item breakfast d-flex gap-3">
 
-                    <img src="images/pancakes.jpg" alt="Honey Pancakes">
+                    <img
+                        src="images/pancakes.jpg"
+                        alt="Honey Pancakes">
 
                     <div class="flex-grow-1">
 
                         <div class="d-flex justify-content-between">
 
-                            <h2 class="h5">Honey Pancakes</h2>
+                            <h2 class="h5">
+                                Honey Pancakes
+                            </h2>
 
-                            <span class="price">$9.90</span>
+                            <span class="price">
+                                $9.90
+                            </span>
 
                         </div>
 
                         <p class="description">
-                            Fluffy homemade pancakes drizzled with pure honey
+                            Fluffy pancakes drizzled with honey
                             and served with fresh seasonal fruits.
                         </p>
 
                     </div>
 
                 </div>
+                            </div>
 
-            </div>
+            <!-- RIGHT COLUMN -->
 
-            <!-- Right Side -->
             <div class="col-md-6">
-                                <!-- Chicken Burger -->
+
+                <!-- Chicken Burger -->
 
                 <div class="menu-item main d-flex gap-3">
 
-                    <img src="images/burger.jpg" alt="Chicken Burger">
+                    <img src="images/burger.jpg"
+                         alt="Chicken Burger">
 
                     <div class="flex-grow-1">
 
                         <div class="d-flex justify-content-between">
 
-                            <h2 class="h5">Chicken Burger</h2>
+                            <h2 class="h5">
+                                Chicken Burger
+                            </h2>
 
-                            <span class="price">$12.90</span>
+                            <span class="price">
+                                $12.90
+                            </span>
 
                         </div>
 
                         <p class="description">
-                            Hearty burger filled with teriyaki chicken and
-                            crispy chicken tenders, topped with romaine
-                            lettuce and cheese.
+                            Teriyaki chicken and crispy tenders layered
+                            with lettuce and cheese in a soft toasted bun.
                         </p>
 
                     </div>
 
                 </div>
 
-                <!-- Creamy Pasta -->
+                <!-- Charcuterie Board -->
 
                 <div class="menu-item main d-flex gap-3">
 
-                    <img src="images/pasta.jpg" alt="Creamy Pasta">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAvBPD0qvCo0-nGCEa78-lQnhvKneUHFGET676JXJp2A&s=10"
+                        alt="Charcuterie Board">
 
                     <div class="flex-grow-1">
 
                         <div class="d-flex justify-content-between">
 
-                            <h2 class="h5">Creamy Pasta</h2>
+                            <h2 class="h5">
+                                Charcuterie Board
+                            </h2>
 
-                            <span class="price">$14.50</span>
+                            <span class="price">
+                                $18.90
+                            </span>
 
                         </div>
 
                         <p class="description">
-                            Handmade linguine pasta topped generously
-                            with cheese and our famous pasta sauce.
+                            A refined selection of cured meats,
+                            cheeses and accompaniments, perfect for sharing.
                         </p>
 
                     </div>
@@ -473,22 +511,57 @@
 
                 <div class="menu-item dessert d-flex gap-3">
 
-                    <img src="images/cheesecake.jpg" alt="Classic Cheesecake">
+                    <img src="images/cheesecake.jpg"
+                         alt="Classic Cheesecake">
 
                     <div class="flex-grow-1">
 
                         <div class="d-flex justify-content-between">
 
-                            <h2 class="h5">Classic Cheesecake</h2>
+                            <h2 class="h5">
+                                Classic Cheesecake
+                            </h2>
 
-                            <span class="price">$7.50</span>
+                            <span class="price">
+                                $7.50
+                            </span>
 
                         </div>
 
                         <p class="description">
-                            Smooth and creamy cheesecake on a buttery
-                            biscuit base, served with a sweet strawberry
-                            topping.
+                            Smooth, creamy cheesecake on a buttery
+                            biscuit base with a delicate strawberry finish.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Italian Gelato -->
+
+                <div class="menu-item dessert d-flex gap-3">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS871rNMHaejvCQTt3Mitj5vv9f7mfU4DHgYk7xCRcf30NLAjEBIDI-HucS&s=10"
+                        alt="Assorted Italian Gelato">
+
+                    <div class="flex-grow-1">
+
+                        <div class="d-flex justify-content-between">
+
+                            <h2 class="h5">
+                                Assorted Italian Gelato
+                            </h2>
+
+                            <span class="price">
+                                $8.90
+                            </span>
+
+                        </div>
+
+                        <p class="description">
+                            Smooth Italian-style gelato in a colourful
+                            selection of classic and seasonal flavours.
                         </p>
 
                     </div>
@@ -509,10 +582,15 @@
 
     <p>
         <i class="bi bi-cup-hot-fill"></i>
-        © 2026 ABC Café | Fresh Coffee • Delicious Food • Great Company
+        © 2026 ABC Café |
+        Fresh Coffee • Delicious Food • Great Company
     </p>
 
 </footer>
+
+<!-- Bootstrap JavaScript -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Menu Filter JavaScript -->
 
@@ -528,11 +606,15 @@ function filterMenu(category) {
 
             items[i].style.display = "flex";
 
-        } else if (items[i].classList.contains(category)) {
+        }
+
+        else if (items[i].classList.contains(category)) {
 
             items[i].style.display = "flex";
 
-        } else {
+        }
+
+        else {
 
             items[i].style.display = "none";
 
@@ -543,10 +625,6 @@ function filterMenu(category) {
 }
 
 </script>
-
-<!-- Bootstrap JavaScript -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
