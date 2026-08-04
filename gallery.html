@@ -14,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <style>
+
         body {
             background-color: #F7EFE5;
             font-family: Arial, sans-serif;
@@ -60,11 +61,12 @@
             border-radius: 15px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.15);
             text-align: center;
+            height: 100%;
         }
 
         .gallery-img {
             width: 100%;
-            height: 250px;
+            height: 230px;
             object-fit: cover;
             border-radius: 10px;
             cursor: pointer;
@@ -81,8 +83,15 @@
             margin-top: 12px;
         }
 
+        .gallery-card p {
+            color: gray;
+            font-size: 14px;
+        }
+
         #modalImage {
             width: 100%;
+            max-height: 600px;
+            object-fit: cover;
             border-radius: 10px;
         }
 
@@ -93,6 +102,7 @@
             padding: 20px;
             margin-top: 50px;
         }
+
     </style>
 
 </head>
@@ -105,12 +115,10 @@
 
     <div class="container">
 
-        <!-- Logo -->
         <a class="navbar-brand" href="index.html">
             <i class="bi bi-cup-hot-fill"></i> ABC Café
         </a>
 
-        <!-- Mobile Toggle Button -->
         <button
             class="navbar-toggler"
             type="button"
@@ -123,8 +131,6 @@
             <span class="navbar-toggler-icon"></span>
 
         </button>
-
-        <!-- Navigation Links -->
 
         <div class="collapse navbar-collapse" id="mainNavbar">
 
@@ -285,7 +291,7 @@
 
 </nav>
 
-<!-- Gallery -->
+<!-- Gallery Heading -->
 
 <div class="container py-5">
 
@@ -296,14 +302,38 @@
         </h1>
 
         <p>
-            Take a look at our delicious food, drinks and café.
+            Take a look at our food, café atmosphere,
+            celebrations and special moments.
         </p>
 
     </div>
 
+    <!-- Gallery Images -->
+
     <div class="row g-4">
 
-        <!-- Latte -->
+        <!-- 1 Cafe Interior -->
+
+        <div class="col-md-4">
+
+            <div class="gallery-card">
+
+                <img src="images/cafe-interior.jpg"
+                     class="gallery-img"
+                     alt="ABC Café Interior"
+                     onclick="openImage(this)">
+
+                <h2>Our Café</h2>
+
+                <p>
+                    A warm and comfortable place to relax with friends and family.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- 2 Coffee -->
 
         <div class="col-md-4">
 
@@ -311,50 +341,20 @@
 
                 <img src="images/latte.jpg"
                      class="gallery-img"
-                     alt="Café Latte"
+                     alt="Fresh Café Latte"
                      onclick="openImage(this)">
 
-                <h2>Café Latte</h2>
+                <h2>Freshly Brewed Coffee</h2>
+
+                <p>
+                    One of our freshly prepared café lattes.
+                </p>
 
             </div>
 
         </div>
 
-        <!-- Croissant -->
-
-        <div class="col-md-4">
-
-            <div class="gallery-card">
-
-                <img src="images/croissant.jpg"
-                     class="gallery-img"
-                     alt="Butter Croissant"
-                     onclick="openImage(this)">
-
-                <h2>Butter Croissant</h2>
-
-            </div>
-
-        </div>
-
-        <!-- Pancakes -->
-
-        <div class="col-md-4">
-
-            <div class="gallery-card">
-
-                <img src="images/pancakes.jpg"
-                     class="gallery-img"
-                     alt="Honey Pancakes"
-                     onclick="openImage(this)">
-
-                <h2>Honey Pancakes</h2>
-
-            </div>
-
-        </div>
-
-        <!-- Burger -->
+        <!-- 3 Food -->
 
         <div class="col-md-4">
 
@@ -365,41 +365,158 @@
                      alt="Chicken Burger"
                      onclick="openImage(this)">
 
-                <h2>Chicken Burger</h2>
+                <h2>Delicious Meals</h2>
+
+                <p>
+                    Fresh meals prepared for our customers every day.
+                </p>
 
             </div>
 
         </div>
 
-        <!-- Pasta -->
+        <!-- 4 Birthday -->
 
         <div class="col-md-4">
 
             <div class="gallery-card">
 
-                <img src="images/pasta.jpg"
+                <img src="images/birthday.jpg"
                      class="gallery-img"
-                     alt="Creamy Pasta"
+                     alt="Child Birthday Celebration"
                      onclick="openImage(this)">
 
-                <h2>Creamy Pasta</h2>
+                <h2>Birthday Celebrations</h2>
+
+                <p>
+                    Families celebrating a special birthday at ABC Café.
+                </p>
 
             </div>
 
         </div>
 
-        <!-- Cheesecake -->
+        <!-- 5 Grand Opening -->
 
         <div class="col-md-4">
 
             <div class="gallery-card">
 
-                <img src="images/cheesecake.jpg"
+                <img src="images/grand-opening.jpg"
                      class="gallery-img"
-                     alt="Classic Cheesecake"
+                     alt="ABC Café Grand Opening"
                      onclick="openImage(this)">
 
-                <h2>Classic Cheesecake</h2>
+                <h2>Grand Opening</h2>
+
+                <p>
+                    A memorable moment from the opening of ABC Café.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- 6 Award -->
+
+        <div class="col-md-4">
+
+            <div class="gallery-card">
+
+                <img src="images/award.jpg"
+                     class="gallery-img"
+                     alt="ABC Café Award Ceremony"
+                     onclick="openImage(this)">
+
+                <h2>Our Awards</h2>
+
+                <p>
+                    Celebrating the awards and achievements earned by our café.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- 7 Barista -->
+
+        <div class="col-md-4">
+
+            <div class="gallery-card">
+
+                <img src="images/barista.jpg"
+                     class="gallery-img"
+                     alt="Barista Making Coffee"
+                     onclick="openImage(this)">
+
+                <h2>Our Baristas</h2>
+
+                <p>
+                    Our baristas carefully preparing every cup of coffee.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- 8 Friends -->
+
+        <div class="col-md-4">
+
+            <div class="gallery-card">
+
+                <img src="images/friends.jpg"
+                     class="gallery-img"
+                     alt="Friends Dining at ABC Café"
+                     onclick="openImage(this)">
+
+                <h2>Time With Friends</h2>
+
+                <p>
+                    Customers enjoying food and drinks together at the café.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- 9 Desserts -->
+
+        <div class="col-md-4">
+
+            <div class="gallery-card">
+
+                <img src="images/desserts.jpg"
+                     class="gallery-img"
+                     alt="ABC Café Dessert Display"
+                     onclick="openImage(this)">
+
+                <h2>Fresh Desserts</h2>
+
+                <p>
+                    A selection of freshly prepared desserts from our café.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- 10 Cafe Exterior -->
+
+        <div class="col-md-4">
+
+            <div class="gallery-card">
+
+                <img src="images/cafe-exterior.jpg"
+                     class="gallery-img"
+                     alt="ABC Café Exterior"
+                     onclick="openImage(this)">
+
+                <h2>Visit ABC Café</h2>
+
+                <p>
+                    The entrance to our café where we welcome our customers.
+                </p>
 
             </div>
 
@@ -413,7 +530,7 @@
 
 <div class="modal fade" id="imageModal" tabindex="-1">
 
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
 
         <div class="modal-content">
 
@@ -423,10 +540,11 @@
                     Gallery Image
                 </h2>
 
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close">
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close">
                 </button>
 
             </div>
@@ -434,7 +552,7 @@
             <div class="modal-body">
 
                 <img id="modalImage"
-                     src="images/latte.jpg"
+                     src="images/cafe-interior.jpg"
                      alt="Gallery image">
 
             </div>
