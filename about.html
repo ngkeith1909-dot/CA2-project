@@ -78,76 +78,172 @@
     </div>
 </nav>
 
-<header class="page-header">
-    <div class="container text-center">
-        <i class="bi bi-people-fill page-icon"></i>
-        <h1>About ABC Café</h1>
-        <p>A cosy neighbourhood café serving comforting food and freshly brewed coffee.</p>
+<header class="about-header text-center">
+    <div class="container">
+        <p class="section-label mb-2">GET TO KNOW US</p>
+
+        <h1 class="display-5 fw-bold">
+            About ABC Café
+        </h1>
+
+        <p class="lead mx-auto">
+            Learn about our story, our values and the people who make
+            every visit special.
+        </p>
     </div>
 </header>
 
 <main>
     <section class="container py-5">
         <div class="row align-items-center g-4">
-            <div class="col-lg-6">
-                <img src="images/latte.jpg" class="img-fluid story-image" alt="A freshly made café latte">
+
+            <div class="col-12 col-lg-6">
+                <img src="images/cafe-interior.jpg"
+                     class="story-image"
+                     alt="The warm interior of ABC Café">
             </div>
-            <div class="col-lg-6">
-                <p class="section-label">OUR STORY</p>
-                <h2>A simple place to relax</h2>
-                <p>ABC Café was created as a comfortable place for friends, families and students to enjoy good food together.</p>
-                <p>We focus on familiar café favourites, friendly service and a warm atmosphere that makes every visit feel welcoming.</p>
-                <a href="menu.html" class="btn btn-coffee">Explore Our Menu</a>
+
+            <div class="col-12 col-lg-6">
+                <p class="section-label mb-2">OUR STORY</p>
+
+                <h2 class="fw-bold">
+                    Bringing People Together Through Food
+                </h2>
+
+                <p>
+                    ABC Café was created to provide customers with a warm
+                    and comfortable place to enjoy delicious food and drinks.
+                </p>
+
+                <p>
+                    We believe food can create happiness, bring people
+                    together and become part of meaningful memories.
+                </p>
             </div>
+
         </div>
     </section>
 
-    <section class="values-section py-5">
+        <section class="motto-section py-5 text-center">
         <div class="container">
-            <div class="text-center mb-4">
-                <p class="section-label">WHAT WE VALUE</p>
-                <h2>What makes our café special</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="value-card h-100 text-center">
-                        <i class="bi bi-cup-hot-fill"></i>
-                        <h3 class="h4">Quality Drinks</h3>
-                        <p>Freshly prepared coffee and drinks made carefully for every customer.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="value-card h-100 text-center">
-                        <i class="bi bi-egg-fried"></i>
-                        <h3 class="h4">Fresh Food</h3>
-                        <p>Simple meals and desserts prepared with quality ingredients.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="value-card h-100 text-center">
-                        <i class="bi bi-heart-fill"></i>
-                        <h3 class="h4">Friendly Service</h3>
-                        <p>A welcoming environment where customers can feel comfortable.</p>
-                    </div>
-                </div>
-            </div>
+            <i class="bi bi-quote motto-icon"></i>
+
+            <h2 class="fw-bold">Our Motto</h2>
+
+            <p class="motto-text mb-0">
+                “Made with care, shared with joy.”
+            </p>
         </div>
     </section>
 
-    <section class="container py-5 text-center">
-        <h2>Planning a visit?</h2>
-        <p>Check our opening hours or reserve a table before coming down.</p>
-        <a href="location.html" class="btn btn-outline-coffee me-2">Location & Hours</a>
-        <a href="reservations.html" class="btn btn-coffee">Reserve a Table</a>
+        <section class="team-section container py-5">
+        <div class="text-center mb-4">
+            <p class="section-label mb-2">MEET THE TEAM</p>
+            <h2 class="fw-bold">The People Behind Our Café</h2>
+            <p class="text-muted">
+                Click a staff member’s name to learn more.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <article class="col-12 col-md-6 col-lg-4">
+                <div class="card staff-card h-100">
+                    <img src="images/staff-yap-tong.jpg"
+                         class="card-img-top staff-photo"
+                         alt="Yap Tong, café manager">
+
+                    <div class="card-body text-center">
+                        <button class="staff-name"
+                                type="button"
+                                data-target="YapTongBio"
+                                aria-controls="YapTongBio"
+                                aria-expanded="false">
+                            Yap Tong
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+
+                        <p class="staff-role">Café Manager</p>
+
+                        <p id="YapTongBio" class="staff-bio d-none">
+                            Yap Tong manages the café and ensures every customer
+                            receives friendly and helpful service.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4">
+                <div class="card staff-card h-100">
+                    <img src="images/staff-yen-ming.jpg"
+                         class="card-img-top staff-photo"
+                         alt="Yen Ming, head chef">
+
+                    <div class="card-body text-center">
+                        <button class="staff-name"
+                                type="button"
+                                data-target="YenMingBio"
+                                aria-controls="YenMingBio"
+                                aria-expanded="false">
+                            Yen Ming
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+
+                        <p class="staff-role">Head Chef</p>
+
+                        <p id="YenMingBio" class="staff-bio d-none">
+                            Yen Ming develops our menu and prepares dishes
+                            using fresh and carefully selected ingredients.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4">
+                <div class="card staff-card h-100">
+                    <img src="images/staff-wei-ye.jpg"
+                         class="card-img-top staff-photo"
+                         alt="Wei Ye, barista">
+
+                    <div class="card-body text-center">
+                        <button class="staff-name"
+                                type="button"
+                                data-target="WeiYeBio"
+                                aria-controls="WeiYeBio"
+                                aria-expanded="false">
+                            Wei Ye
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+
+                        <p class="staff-role">Barista</p>
+
+                        <p id="WeiYeBio" class="staff-bio d-none">
+                            Wei Ye prepares our drinks and enjoys creating
+                            welcoming experiences for customers.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
     </section>
 </main>
 
-<footer class="site-footer py-4">
-    <div class="container text-center">
-        <p class="mb-0"><i class="bi bi-cup-hot-fill"></i> &copy; 2026 ABC Café</p>
+<footer class="site-footer py-4 text-center">
+    <div class="container">
+        <p class="fw-bold mb-1">
+            <i class="bi bi-cup-hot-fill"></i> ABC Café
+        </p>
+
+        <p class="mb-1">
+            Serving delicious food, drinks and desserts.
+        </p>
+
+        <p class="mb-0">
+            &copy; 2026 ABC Café. All rights reserved.
+        </p>
     </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<script src="js/about.js"></script>

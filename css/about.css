@@ -1,14 +1,11 @@
 body {
-    background-color: #F7EFE5;
-    color: #3B2A25;
+    background-color: #f7efe5;
+    color: #30251f;
     font-family: Arial, sans-serif;
 }
 
-.navbar,
-.page-header,
-.site-footer {
-    background-color: #6F4E37;
-    color: white;
+.navbar {
+    background-color: #6f4e37;
 }
 
 .navbar-brand,
@@ -22,7 +19,7 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #FFD580 !important;
+    color: #ffd580 !important;
 }
 
 .dropdown-menu {
@@ -31,67 +28,117 @@ body {
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 
-.dropdown-item:hover,
+.dropdown-item:hover {
+    background-color: #f7efe5;
+    color: #6f4e37;
+}
+
 .dropdown-item.active {
-    background-color: #F7EFE5;
-    color: #6F4E37;
+    background-color: #6f4e37;
+    color: white;
 }
 
-.page-header {
-    padding: 60px 0;
+.about-header {
+    padding: 5rem 1rem;
+    background-color: #fff9f1;
+    border-bottom: 1px solid #dfd0c2;
 }
 
-.page-icon {
-    color: #FFD580;
-    font-size: 48px;
+.about-header .lead {
+    max-width: 700px;
+}
+
+.section-label {
+    color: #9b5f35;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
 }
 
 .story-image {
     width: 100%;
-    height: 360px;
+    height: 350px;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 1rem;
 }
 
-.section-label {
-    color: #8B5E3C;
-    font-weight: bold;
-    letter-spacing: 2px;
+.motto-section {
+    background-color: #6f4e37;
+    color: white;
+}
+
+.motto-icon {
+    color: #ffd580;
+    font-size: 2rem;
+}
+
+.motto-text {
+    font-size: 1.3rem;
 }
 
 .values-section {
-    background-color: #EAD8C5;
+    background-color: #fff9f1;
 }
 
-.value-card {
-    background-color: white;
-    padding: 30px;
-    border-radius: 14px;
-    box-shadow: 0 5px 15px rgba(75, 46, 43, 0.12);
-}
-
-.value-card i {
-    color: #8B5E3C;
-    font-size: 42px;
-}
-
-.btn-coffee {
-    background-color: #8B5E3C;
-    color: white;
+.value-card,
+.staff-card {
     border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(72, 48, 36, 0.1);
 }
 
-.btn-coffee:hover {
-    background-color: #6F4E37;
+.value-icon {
+    color: #9b5f35;
+    font-size: 2rem;
+}
+
+.staff-photo {
+    height: 250px;
+    object-fit: cover;
+}
+
+.staff-name {
+    border: none;
+    background: none;
+    color: #6f4e37;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.staff-name:hover {
+    color: #9b5f35;
+}
+
+.staff-name:focus-visible {
+    outline: 3px solid #e0a663;
+    outline-offset: 3px;
+}
+
+.staff-role {
+    color: #766b65;
+    font-weight: bold;
+}
+
+.staff-bio {
+    padding-top: 1rem;
+    border-top: 1px solid #dfd0c2;
+}
+
+.site-footer {
+    background-color: #4b3225;
     color: white;
 }
 
-.btn-outline-coffee {
-    color: #6F4E37;
-    border: 1px solid #6F4E37;
-}
+@media (max-width: 767px) {
+    .about-header {
+        padding: 3.5rem 1rem;
+    }
 
-.btn-outline-coffee:hover {
-    background-color: #6F4E37;
-    color: white;
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .story-image {
+        height: 260px;
+    }
 }
