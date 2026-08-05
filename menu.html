@@ -117,7 +117,7 @@
 
 <body>
 
-<!-- Navigation -->
+<!-- Navigation Bar -->
 
 <nav class="navbar navbar-expand-lg navbar-dark">
 
@@ -341,7 +341,7 @@
 
         </div>
 
-        <!-- Dishes -->
+        <!-- Dishes Start Here -->
 
         <div id="menuDishes">
 
@@ -374,8 +374,8 @@
                             </div>
 
                             <p class="description">
-                                Golden eggs and crispy bacon served
-                                together for a hearty morning favourite.
+                                Golden eggs and crispy bacon served together
+                                for a hearty morning favourite.
                             </p>
 
                         </div>
@@ -596,7 +596,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Menu Category JavaScript -->
+<!-- Menu Filter JavaScript -->
 
 <script>
 
@@ -606,27 +606,21 @@ function filterMenu(category) {
 
     for (let i = 0; i < items.length; i++) {
 
-        if (category === "all") {
+        if (category === "all" ||
+            items[i].classList.contains(category)) {
 
-            items[i].style.display = "flex";
+            items[i].classList.remove("d-none");
+            items[i].classList.add("d-flex");
 
-        }
+        } else {
 
-        else if (items[i].classList.contains(category)) {
-
-            items[i].style.display = "flex";
-
-        }
-
-        else {
-
-            items[i].style.display = "none";
+            items[i].classList.remove("d-flex");
+            items[i].classList.add("d-none");
 
         }
 
     }
 
-    // Smoothly move down to the dishes
     document.getElementById("menuDishes").scrollIntoView({
         behavior: "smooth",
         block: "start"
