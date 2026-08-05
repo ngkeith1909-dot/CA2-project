@@ -4,17 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>ABC Café | Menu</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <style>
-
         body {
             background-color: #F7EFE5;
             font-family: Arial, sans-serif;
@@ -50,34 +45,25 @@
         }
 
         .menu-container {
-            background-color: white;
-            margin-top: 40px;
-            margin-bottom: 40px;
+            background: white;
+            margin: 40px auto;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.15);
         }
 
         .menu-title {
             color: #4B2E2B;
-            font-size: 45px;
             font-weight: bold;
         }
 
-        .subtitle {
-            color: #A67B5B;
-            margin-bottom: 30px;
-        }
-
         .filter-btn {
-            background-color: #6F4E37;
+            background: #6F4E37;
             color: white;
-            border: none;
             margin: 5px;
         }
 
         .filter-btn:hover {
-            background-color: #A67B5B;
+            background: #A67B5B;
             color: white;
         }
 
@@ -88,15 +74,14 @@
         }
 
         .menu-item img {
-            width: 120px;
-            height: 120px;
+            width: 110px;
+            height: 110px;
             object-fit: cover;
             border-radius: 10px;
         }
 
         .price {
             color: #D17B00;
-            font-size: 21px;
             font-weight: bold;
         }
 
@@ -106,14 +91,12 @@
         }
 
         footer {
-            background-color: #6F4E37;
+            background: #6F4E37;
             color: white;
             text-align: center;
             padding: 20px;
         }
-
     </style>
-
 </head>
 
 <body>
@@ -124,38 +107,39 @@
 
     <div class="container">
 
+        <!-- Logo -->
         <a class="navbar-brand" href="index.html">
             <i class="bi bi-cup-hot-fill"></i> ABC Café
         </a>
 
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+        <!-- Mobile Toggle Button -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
 
             <span class="navbar-toggler-icon"></span>
 
         </button>
+
+        <!-- Navigation Links -->
 
         <div class="collapse navbar-collapse" id="mainNavbar">
 
             <ul class="navbar-nav ms-auto">
 
                 <!-- Home -->
-
                 <li class="nav-item">
-
                     <a class="nav-link" href="index.html">
                         <i class="bi bi-house-fill"></i> Home
                     </a>
-
                 </li>
 
                 <!-- Menu -->
-
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle active"
@@ -171,15 +155,13 @@
 
                         <li>
                             <a class="dropdown-item" href="menu.html">
-                                <i class="bi bi-book-fill me-2"></i>
-                                Food & Drinks
+                                <i class="bi bi-book-fill me-2"></i> Food & Drinks
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="events.html">
-                                <i class="bi bi-megaphone-fill me-2"></i>
-                                Events & Specials
+                                <i class="bi bi-megaphone-fill me-2"></i> Events & Specials
                             </a>
                         </li>
 
@@ -188,7 +170,6 @@
                 </li>
 
                 <!-- Gallery -->
-
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle"
@@ -204,15 +185,13 @@
 
                         <li>
                             <a class="dropdown-item" href="gallery.html">
-                                <i class="bi bi-images me-2"></i>
-                                Photo Gallery
+                                <i class="bi bi-images me-2"></i> Photo Gallery
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="about.html">
-                                <i class="bi bi-people-fill me-2"></i>
-                                About Us
+                                <i class="bi bi-people-fill me-2"></i> About Us
                             </a>
                         </li>
 
@@ -221,7 +200,6 @@
                 </li>
 
                 <!-- Reviews -->
-
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle"
@@ -237,13 +215,13 @@
 
                         <li>
                             <a class="dropdown-item" href="reviews.html">
-                                Customer Reviews
+                                <i class="bi bi-chat-square-quote-fill me-2"></i> Customer Reviews
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="faq.html">
-                                FAQ
+                                <i class="bi bi-question-circle-fill me-2"></i> FAQ
                             </a>
                         </li>
 
@@ -252,7 +230,6 @@
                 </li>
 
                 <!-- Contact -->
-
                 <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle"
@@ -268,19 +245,19 @@
 
                         <li>
                             <a class="dropdown-item" href="contact.html">
-                                Contact Us
+                                <i class="bi bi-envelope-fill me-2"></i> Contact Us
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="reservations.html">
-                                Reservations
+                                <i class="bi bi-calendar-check-fill me-2"></i> Reservations
                             </a>
                         </li>
 
                         <li>
                             <a class="dropdown-item" href="location.html">
-                                Location & Hours
+                                <i class="bi bi-geo-alt-fill me-2"></i> Location & Hours
                             </a>
                         </li>
 
@@ -299,320 +276,205 @@
 <!-- Menu -->
 
 <div class="container">
-
     <div class="menu-container">
-
-        <div class="text-center">
-
-            <h1 class="menu-title">
-                ☕ Our Menu
-            </h1>
-
-            <p class="subtitle">
-                Freshly prepared with quality ingredients
-            </p>
-
-        </div>
-
-        <!-- Filter Buttons -->
 
         <div class="text-center mb-4">
 
-            <button class="btn filter-btn"
-                    onclick="filterMenu('all')">
+            <h1 class="menu-title">☕ Our Menu</h1>
+            <p>Freshly prepared with quality ingredients</p>
+
+            <button class="btn filter-btn" onclick="filterMenu('all')">
                 All
             </button>
 
-            <button class="btn filter-btn"
-                    onclick="filterMenu('breakfast')">
+            <button class="btn filter-btn" onclick="filterMenu('breakfast')">
                 Breakfast
             </button>
 
-            <button class="btn filter-btn"
-                    onclick="filterMenu('main')">
+            <button class="btn filter-btn" onclick="filterMenu('main')">
                 Main Dishes
             </button>
 
-            <button class="btn filter-btn"
-                    onclick="filterMenu('dessert')">
+            <button class="btn filter-btn" onclick="filterMenu('dessert')">
                 Desserts
             </button>
 
         </div>
 
-        <!-- Menu Dishes -->
+        <div class="row g-4">
 
-        <div id="menuDishes">
+            <!-- Eggs & Bacon -->
+            <div class="col-md-6 dish breakfast">
 
-            <div class="row g-4">
+                <div class="menu-item d-flex gap-3">
 
-                <!-- Eggs & Bacon -->
+                    <img src="https://flinderslanecafe.com.au/cdn/shop/articles/Big_20Brekkies_20at_20Flinders_20Lane_compressed_6da88c90-09e5-4a3f-9d2a-dfb79ebbcced.jpg?v=1773196330"
+                         alt="Eggs and Bacon">
 
-                <div class="col-md-6 dish breakfast">
+                    <div class="flex-grow-1">
 
-                    <div class="menu-item d-flex gap-3">
-
-                        <img
-                            src="https://flinderslanecafe.com.au/cdn/shop/articles/Big_20Brekkies_20at_20Flinders_20Lane_compressed_6da88c90-09e5-4a3f-9d2a-dfb79ebbcced.jpg?v=1773196330"
-                            alt="Eggs and Bacon Brekkie">
-
-                        <div class="flex-grow-1">
-
-                            <div class="d-flex justify-content-between">
-
-                                <h2 class="h5">
-                                    Eggs & Bacon Brekkie
-                                </h2>
-
-                                <span class="price">
-                                    $13.90
-                                </span>
-
-                            </div>
-
-                            <p class="description">
-                                Golden eggs and crispy bacon served together
-                                for a hearty morning favourite.
-                            </p>
-
+                        <div class="d-flex justify-content-between">
+                            <h5>Eggs & Bacon Brekkie</h5>
+                            <span class="price">$13.90</span>
                         </div>
 
+                        <p class="description">
+                            Golden eggs and crispy bacon served for a hearty breakfast.
+                        </p>
+
                     </div>
-
                 </div>
+            </div>
 
-                <!-- Avocado Toast -->
+            <!-- Avocado Toast -->
+            <div class="col-md-6 dish breakfast">
 
-                <div class="col-md-6 dish breakfast">
+                <div class="menu-item d-flex gap-3">
 
-                    <div class="menu-item d-flex gap-3">
+                    <img src="https://eightforestlane.com/wp-content/uploads/2024/01/Smashed-Avocado-Toast_SQ-2.jpg"
+                         alt="Avocado Toast">
 
-                        <img
-                            src="https://eightforestlane.com/wp-content/uploads/2024/01/Smashed-Avocado-Toast_SQ-2.jpg"
-                            alt="Avocado Toast">
+                    <div class="flex-grow-1">
 
-                        <div class="flex-grow-1">
-
-                            <div class="d-flex justify-content-between">
-
-                                <h2 class="h5">
-                                    Avocado Toast
-                                </h2>
-
-                                <span class="price">
-                                    $11.90
-                                </span>
-
-                            </div>
-
-                            <p class="description">
-                                Creamy smashed avocado served on crisp
-                                toast for a fresh and vibrant bite.
-                            </p>
-
+                        <div class="d-flex justify-content-between">
+                            <h5>Avocado Toast</h5>
+                            <span class="price">$11.90</span>
                         </div>
 
+                        <p class="description">
+                            Creamy smashed avocado served on crisp toasted bread.
+                        </p>
+
                     </div>
-
                 </div>
+            </div>
 
-                <!-- Honey Pancakes -->
+            <!-- Pancakes -->
+            <div class="col-md-6 dish breakfast">
 
-                <div class="col-md-6 dish breakfast">
+                <div class="menu-item d-flex gap-3">
 
-                    <div class="menu-item d-flex gap-3">
+                    <img src="images/pancakes.jpg" alt="Honey Pancakes">
 
-                        <img src="images/pancakes.jpg"
-                             alt="Honey Pancakes">
+                    <div class="flex-grow-1">
 
-                        <div class="flex-grow-1">
-
-                            <div class="d-flex justify-content-between">
-
-                                <h2 class="h5">
-                                    Honey Pancakes
-                                </h2>
-
-                                <span class="price">
-                                    $9.90
-                                </span>
-
-                            </div>
-
-                            <p class="description">
-                                Fluffy pancakes drizzled with honey
-                                and served with fresh seasonal fruits.
-                            </p>
-
+                        <div class="d-flex justify-content-between">
+                            <h5>Honey Pancakes</h5>
+                            <span class="price">$9.90</span>
                         </div>
 
+                        <p class="description">
+                            Fluffy pancakes with honey and fresh seasonal fruits.
+                        </p>
+
                     </div>
-
                 </div>
+            </div>
+                        <!-- Chicken Burger -->
+            <div class="col-md-6 dish main">
 
-                <!-- Chicken Burger -->
+                <div class="menu-item d-flex gap-3">
 
-                <div class="col-md-6 dish main">
+                    <img src="images/burger.jpg"
+                         alt="Chicken Burger">
 
-                    <div class="menu-item d-flex gap-3">
+                    <div class="flex-grow-1">
 
-                        <img src="images/burger.jpg"
-                             alt="Chicken Burger">
-
-                        <div class="flex-grow-1">
-
-                            <div class="d-flex justify-content-between">
-
-                                <h2 class="h5">
-                                    Chicken Burger
-                                </h2>
-
-                                <span class="price">
-                                    $12.90
-                                </span>
-
-                            </div>
-
-                            <p class="description">
-                                Teriyaki chicken and crispy tenders layered
-                                with lettuce and cheese in a soft toasted bun.
-                            </p>
-
+                        <div class="d-flex justify-content-between">
+                            <h5>Chicken Burger</h5>
+                            <span class="price">$12.90</span>
                         </div>
 
+                        <p class="description">
+                            Teriyaki chicken, crispy tenders, lettuce and cheese.
+                        </p>
+
                     </div>
-
                 </div>
-                                <!-- Charcuterie Board -->
+            </div>
 
-                <div class="col-md-6 dish main">
+            <!-- Charcuterie Board -->
+            <div class="col-md-6 dish main">
 
-                    <div class="menu-item d-flex gap-3">
+                <div class="menu-item d-flex gap-3">
 
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAvBPD0qvCo0-nGCEa78-lQnhvKneUHFGET676JXJp2A&s=10"
-                            alt="Charcuterie Board">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAvBPD0qvCo0-nGCEa78-lQnhvKneUHFGET676JXJp2A&s=10"
+                         alt="Charcuterie Board">
 
-                        <div class="flex-grow-1">
+                    <div class="flex-grow-1">
 
-                            <div class="d-flex justify-content-between">
-
-                                <h2 class="h5">
-                                    Charcuterie Board
-                                </h2>
-
-                                <span class="price">
-                                    $18.90
-                                </span>
-
-                            </div>
-
-                            <p class="description">
-                                A refined selection of cured meats,
-                                cheeses and accompaniments, perfect for sharing.
-                            </p>
-
+                        <div class="d-flex justify-content-between">
+                            <h5>Charcuterie Board</h5>
+                            <span class="price">$18.90</span>
                         </div>
 
+                        <p class="description">
+                            Cured meats, cheeses and accompaniments, perfect for sharing.
+                        </p>
+
                     </div>
-
                 </div>
+            </div>
 
-                <!-- Classic Cheesecake -->
+            <!-- Classic Cheesecake -->
+            <div class="col-md-6 dish dessert">
 
-                <div class="col-md-6 dish dessert">
+                <div class="menu-item d-flex gap-3">
 
-                    <div class="menu-item d-flex gap-3">
+                    <img src="images/cheesecake.jpg"
+                         alt="Classic Cheesecake">
 
-                        <img
-                            src="images/cheesecake.jpg"
-                            alt="Classic Cheesecake">
+                    <div class="flex-grow-1">
 
-                        <div class="flex-grow-1">
-
-                            <div class="d-flex justify-content-between">
-
-                                <h2 class="h5">
-                                    Classic Cheesecake
-                                </h2>
-
-                                <span class="price">
-                                    $7.50
-                                </span>
-
-                            </div>
-
-                            <p class="description">
-                                Smooth, creamy cheesecake on a buttery
-                                biscuit base with a delicate strawberry finish.
-                            </p>
-
+                        <div class="d-flex justify-content-between">
+                            <h5>Classic Cheesecake</h5>
+                            <span class="price">$7.50</span>
                         </div>
 
+                        <p class="description">
+                            Creamy cheesecake on a buttery biscuit base.
+                        </p>
+
                     </div>
-
                 </div>
+            </div>
 
-                <!-- Italian Gelato -->
+            <!-- Italian Gelato -->
+            <div class="col-md-6 dish dessert">
 
-                <div class="col-md-6 dish dessert">
+                <div class="menu-item d-flex gap-3">
 
-                    <div class="menu-item d-flex gap-3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS871rNMHaejvCQTt3Mitj5vv9f7mfU4DHgYk7xCRcf30NLAjEBIDI-HucS&s=10"
+                         alt="Italian Gelato">
 
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS871rNMHaejvCQTt3Mitj5vv9f7mfU4DHgYk7xCRcf30NLAjEBIDI-HucS&s=10"
-                            alt="Assorted Italian Gelato">
+                    <div class="flex-grow-1">
 
-                        <div class="flex-grow-1">
-
-                            <div class="d-flex justify-content-between">
-
-                                <h2 class="h5">
-                                    Assorted Italian Gelato
-                                </h2>
-
-                                <span class="price">
-                                    $8.90
-                                </span>
-
-                            </div>
-
-                            <p class="description">
-                                Smooth Italian-style gelato in a colourful
-                                selection of classic and seasonal flavours.
-                            </p>
-
+                        <div class="d-flex justify-content-between">
+                            <h5>Assorted Italian Gelato</h5>
+                            <span class="price">$8.90</span>
                         </div>
 
+                        <p class="description">
+                            Smooth Italian gelato in classic and seasonal flavours.
+                        </p>
+
                     </div>
-
                 </div>
-
             </div>
 
         </div>
 
     </div>
-
 </div>
 
-<!-- Footer -->
-
 <footer>
-
     <p>
         <i class="bi bi-cup-hot-fill"></i>
-        © 2026 ABC Café |
-        Fresh Coffee • Delicious Food • Great Company
+        © 2026 ABC Café | Fresh Coffee • Delicious Food • Great Company
     </p>
-
 </footer>
 
-<!-- Bootstrap JavaScript -->
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Menu Filter JavaScript -->
 
 <script>
 
@@ -632,14 +494,7 @@ function filterMenu(category) {
             dishes[i].classList.add("d-none");
 
         }
-
     }
-
-    document.getElementById("menuDishes").scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
-
 }
 
 </script>
