@@ -1,476 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ABC Café</title>
-
-    <!-- Bootstrap CSS -->
+    <title>ABC Café | About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-    <style>
-
-        body {
-            background-color: #4B2E2B;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            background-color: #6F4E37;
-        }
-
-        .navbar-brand,
-        .nav-link {
-            color: white !important;
-        }
-
-        .navbar-brand {
-            font-weight: bold;
-        }
-
-        .nav-link:hover,
-        .nav-link.active {
-            color: #FFD580 !important;
-        }
-
-        .dropdown-menu {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 5px 12px rgba(0,0,0,0.15);
-        }
-
-        .dropdown-item:hover {
-            background-color: #F7EFE5;
-            color: #6F4E37;
-        }
-
-        .hero {
-            background-color: #6F4E37;
-            margin-top: 50px;
-            padding: 70px 30px;
-            border-radius: 15px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 50px;
-            font-weight: bold;
-        }
-
-        .hero p {
-            font-size: 20px;
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
-
-        .btn-coffee {
-            background-color: #A67B5B;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-        }
-
-        .btn-coffee:hover {
-            background-color: #8B5E3C;
-            color: white;
-        }
-
-        .features {
-            margin-top: 60px;
-            margin-bottom: 60px;
-        }
-
-        .feature-box {
-            background-color: #6F4E37;
-            padding: 30px;
-            border-radius: 12px;
-            text-align: center;
-            height: 100%;
-        }
-
-        .feature-box i {
-            font-size: 45px;
-            color: #FFD580;
-        }
-
-        .feature-box h2 {
-            margin-top: 20px;
-        }
-
-        footer {
-            background-color: #6F4E37;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="css/about.css">
 </head>
-
 <body>
-
-<!-- Navigation -->
-
 <nav class="navbar navbar-expand-lg navbar-dark">
-
     <div class="container">
-
-        <!-- Logo -->
         <a class="navbar-brand" href="index.html">
-            <i class="bi bi-cup-hot-fill"></i>
-            ABC Café
+            <i class="bi bi-cup-hot-fill"></i> ABC Café
         </a>
 
-        <!-- Mobile Toggle -->
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-
         </button>
 
-        <!-- Navigation Links -->
-
         <div class="collapse navbar-collapse" id="mainNavbar">
-
             <ul class="navbar-nav ms-auto">
-
-                <!-- Home -->
-
                 <li class="nav-item">
-
-                    <a class="nav-link active" href="index.html">
-
-                        <i class="bi bi-house-fill"></i>
-                        Home
-
+                    <a class="nav-link" href="index.html">
+                        <i class="bi bi-house-fill"></i> Home
                     </a>
-
                 </li>
 
-                <!-- Menu -->
-
                 <li class="nav-item dropdown">
-
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown">
-
-                        <i class="bi bi-book-fill"></i>
-                        Menu
-
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                       data-bs-toggle="dropdown">
+                        <i class="bi bi-book-fill"></i> Menu
                     </a>
-
                     <ul class="dropdown-menu">
-
-                        <li>
-
-                            <a class="dropdown-item" href="menu.html">
-
-                                <i class="bi bi-book-fill me-2"></i>
-                                Food & Drinks
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a class="dropdown-item" href="specials.html">
-
-                                <i class="bi bi-megaphone-fill me-2"></i>
-                                Events & Specials
-
-                            </a>
-
-                        </li>
-
+                        <li><a class="dropdown-item" href="menu.html"><i class="bi bi-book-fill me-2"></i>Food & Drinks</a></li>
+                        <li><a class="dropdown-item" href="events.html"><i class="bi bi-megaphone-fill me-2"></i>Events & Specials</a></li>
                     </ul>
-
                 </li>
 
-                <!-- Gallery -->
-
                 <li class="nav-item dropdown">
-
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown">
-
-                        <i class="bi bi-camera-fill"></i>
-                        Gallery
-
+                    <a class="nav-link dropdown-toggle active" href="#" role="button"
+                       data-bs-toggle="dropdown" aria-current="page">
+                        <i class="bi bi-camera-fill"></i> Gallery
                     </a>
-
                     <ul class="dropdown-menu">
-
-                        <li>
-
-                            <a class="dropdown-item" href="gallery.html">
-
-                                <i class="bi bi-images me-2"></i>
-                                Photo Gallery
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a class="dropdown-item" href="about.html">
-
-                                <i class="bi bi-people-fill me-2"></i>
-                                About Us
-
-                            </a>
-
-                        </li>
-
+                        <li><a class="dropdown-item" href="gallery.html"><i class="bi bi-images me-2"></i>Photo Gallery</a></li>
+                        <li><a class="dropdown-item active" href="about.html"><i class="bi bi-people-fill me-2"></i>About Us</a></li>
                     </ul>
-
                 </li>
 
-                <!-- Reviews -->
-
                 <li class="nav-item dropdown">
-
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown">
-
-                        <i class="bi bi-star-fill"></i>
-                        Reviews
-
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                       data-bs-toggle="dropdown">
+                        <i class="bi bi-star-fill"></i> Reviews
                     </a>
-
                     <ul class="dropdown-menu">
-
-                        <li>
-
-                            <a class="dropdown-item" href="reviews.html">
-
-                                <i class="bi bi-chat-square-quote-fill me-2"></i>
-                                Customer Reviews
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a class="dropdown-item" href="faq.html">
-
-                                <i class="bi bi-question-circle-fill me-2"></i>
-                                FAQ
-
-                            </a>
-
-                        </li>
-
+                        <li><a class="dropdown-item" href="reviews.html"><i class="bi bi-chat-square-quote-fill me-2"></i>Customer Reviews</a></li>
+                        <li><a class="dropdown-item" href="faq.html"><i class="bi bi-question-circle-fill me-2"></i>FAQ</a></li>
                     </ul>
-
                 </li>
 
-                <!-- Contact -->
-
                 <li class="nav-item dropdown">
-
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown">
-
-                        <i class="bi bi-envelope-fill"></i>
-                        Contact
-
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                       data-bs-toggle="dropdown">
+                        <i class="bi bi-envelope-fill"></i> Contact
                     </a>
-
                     <ul class="dropdown-menu dropdown-menu-end">
-
-                        <li>
-
-                            <a class="dropdown-item" href="contact.html">
-
-                                <i class="bi bi-envelope-fill me-2"></i>
-                                Contact Us
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a class="dropdown-item" href="reservations.html">
-
-                                <i class="bi bi-calendar-check-fill me-2"></i>
-                                Reservations
-
-                            </a>
-
-                        </li>
-
-                        <li>
-
-                            <a class="dropdown-item" href="location.html">
-
-                                <i class="bi bi-geo-alt-fill me-2"></i>
-                                Location & Hours
-
-                            </a>
-
-                        </li>
-
+                        <li><a class="dropdown-item" href="contact.html"><i class="bi bi-envelope-fill me-2"></i>Contact Us</a></li>
+                        <li><a class="dropdown-item" href="reservations.html"><i class="bi bi-calendar-check-fill me-2"></i>Reservations</a></li>
+                        <li><a class="dropdown-item" href="location.html"><i class="bi bi-geo-alt-fill me-2"></i>Location & Hours</a></li>
                     </ul>
-
                 </li>
-
             </ul>
-
         </div>
-
     </div>
-
 </nav>
 
-<!-- Hero Section -->
+<header class="about-header text-center">
+    <div class="container">
+        <p class="section-label mb-2">GET TO KNOW US</p>
 
-<div class="container">
-
-    <div class="hero">
-
-        <h1>
-            ☕ Welcome to ABC Café
+        <h1 class="display-5 fw-bold">
+            About ABC Café
         </h1>
 
-        <p>
-            Enjoy freshly brewed coffee, delicious homemade meals
-            and warm hospitality in a cosy café perfect for
-            family and friends.
+        <p class="lead mx-auto">
+            Learn about our story, our values and the people who make
+            every visit special.
+        </p>
+    </div>
+</header>
+
+<main>
+    <section class="container py-5">
+        <div class="row align-items-center g-4">
+
+            <div class="col-12 col-lg-6">
+                <img src="images/cafe-interior.jpg"
+                     class="story-image"
+                     alt="The warm interior of ABC Café">
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <p class="section-label mb-2">OUR STORY</p>
+
+                <h2 class="fw-bold">
+                    Bringing People Together Through Food
+                </h2>
+
+                <p>
+                    ABC Café was created to provide customers with a warm
+                    and comfortable place to enjoy delicious food and drinks.
+                </p>
+
+                <p>
+                    We believe food can create happiness, bring people
+                    together and become part of meaningful memories.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+        <section class="motto-section py-5 text-center">
+        <div class="container">
+            <i class="bi bi-quote motto-icon"></i>
+
+            <h2 class="fw-bold">Our Motto</h2>
+
+            <p class="motto-text mb-0">
+                “Made with care, shared with joy.”
+            </p>
+        </div>
+    </section>
+
+        <section class="team-section container py-5">
+        <div class="text-center mb-4">
+            <p class="section-label mb-2">MEET THE TEAM</p>
+            <h2 class="fw-bold">The People Behind Our Café</h2>
+            <p class="text-muted">
+                Click a staff member’s name to learn more.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <article class="col-12 col-md-6 col-lg-4">
+                <div class="card staff-card h-100">
+                    <img src="images/staff-yap-tong.jpg"
+                         class="card-img-top staff-photo"
+                         alt="Yap Tong, café manager">
+
+                    <div class="card-body text-center">
+                        <button class="staff-name"
+                                type="button"
+                                data-target="YapTongBio"
+                                aria-controls="YapTongBio"
+                                aria-expanded="false">
+                            Yap Tong
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+
+                        <p class="staff-role">Café Manager</p>
+
+                        <p id="YapTongBio" class="staff-bio d-none">
+                            Yap Tong manages the café and ensures every customer
+                            receives friendly and helpful service.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4">
+                <div class="card staff-card h-100">
+                    <img src="images/staff-yen-ming.jpg"
+                         class="card-img-top staff-photo"
+                         alt="Yen Ming, head chef">
+
+                    <div class="card-body text-center">
+                        <button class="staff-name"
+                                type="button"
+                                data-target="YenMingBio"
+                                aria-controls="YenMingBio"
+                                aria-expanded="false">
+                            Yen Ming
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+
+                        <p class="staff-role">Head Chef</p>
+
+                        <p id="YenMingBio" class="staff-bio d-none">
+                            Yen Ming develops our menu and prepares dishes
+                            using fresh and carefully selected ingredients.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4">
+                <div class="card staff-card h-100">
+                    <img src="images/staff-wei-ye.jpg"
+                         class="card-img-top staff-photo"
+                         alt="Wei Ye, barista">
+
+                    <div class="card-body text-center">
+                        <button class="staff-name"
+                                type="button"
+                                data-target="WeiYeBio"
+                                aria-controls="WeiYeBio"
+                                aria-expanded="false">
+                            Wei Ye
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+
+                        <p class="staff-role">Barista</p>
+
+                        <p id="WeiYeBio" class="staff-bio d-none">
+                            Wei Ye prepares our drinks and enjoys creating
+                            welcoming experiences for customers.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer py-4 text-center">
+    <div class="container">
+        <p class="fw-bold mb-1">
+            <i class="bi bi-cup-hot-fill"></i> ABC Café
         </p>
 
-        <a href="menu.html" class="btn btn-coffee btn-lg">
+        <p class="mb-1">
+            Serving delicious food, drinks and desserts.
+        </p>
 
-            View Our Menu
-
-        </a>
-
+        <p class="mb-0">
+            &copy; 2026 ABC Café. All rights reserved.
+        </p>
     </div>
-
-</div>
-
-<!-- Features -->
-
-<div class="container features">
-
-    <div class="row">
-
-        <!-- Premium Coffee -->
-
-        <div class="col-md-4 mb-4">
-
-            <div class="feature-box">
-
-                <i class="bi bi-cup-hot-fill"></i>
-
-                <h2>
-                    Premium Coffee
-                </h2>
-
-                <p>
-                    Expertly brewed coffee made from carefully selected
-                    premium beans, delivering rich aroma and flavour
-                    in every cup.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Fresh Meals -->
-
-        <div class="col-md-4 mb-4">
-
-            <div class="feature-box">
-
-                <i class="bi bi-egg-fried"></i>
-
-                <h2>
-                    Fresh Meals
-                </h2>
-
-                <p>
-                    From hearty breakfasts to satisfying lunches,
-                    every meal is freshly prepared using quality
-                    ingredients.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Warm Atmosphere -->
-
-        <div class="col-md-4 mb-4">
-
-            <div class="feature-box">
-
-                <i class="bi bi-heart-fill"></i>
-
-                <h2>
-                    Warm Atmosphere
-                </h2>
-
-                <p>
-                    Relax in a welcoming café with comfortable seating,
-                    friendly service and a peaceful ambience.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Footer -->
-
-<footer>
-
-    <p>
-        <i class="bi bi-cup-hot-fill"></i>
-
-        © 2026 ABC Café |
-        Fresh Coffee • Delicious Food • Great Company
-    </p>
-
 </footer>
 
-<!-- Bootstrap JavaScript -->
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
+<script src="js/about.js"></script>

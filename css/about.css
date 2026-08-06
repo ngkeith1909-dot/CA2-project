@@ -1,0 +1,144 @@
+body {
+    background-color: #f7efe5;
+    color: #30251f;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #6f4e37;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffd580 !important;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item:hover {
+    background-color: #f7efe5;
+    color: #6f4e37;
+}
+
+.dropdown-item.active {
+    background-color: #6f4e37;
+    color: white;
+}
+
+.about-header {
+    padding: 5rem 1rem;
+    background-color: #fff9f1;
+    border-bottom: 1px solid #dfd0c2;
+}
+
+.about-header .lead {
+    max-width: 700px;
+}
+
+.section-label {
+    color: #9b5f35;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+
+.story-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.motto-section {
+    background-color: #6f4e37;
+    color: white;
+}
+
+.motto-icon {
+    color: #ffd580;
+    font-size: 2rem;
+}
+
+.motto-text {
+    font-size: 1.3rem;
+}
+
+.values-section {
+    background-color: #fff9f1;
+}
+
+.value-card,
+.staff-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(72, 48, 36, 0.1);
+}
+
+.value-icon {
+    color: #9b5f35;
+    font-size: 2rem;
+}
+
+.staff-photo {
+    height: 250px;
+    object-fit: cover;
+}
+
+.staff-name {
+    border: none;
+    background: none;
+    color: #6f4e37;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.staff-name:hover {
+    color: #9b5f35;
+}
+
+.staff-name:focus-visible {
+    outline: 3px solid #e0a663;
+    outline-offset: 3px;
+}
+
+.staff-role {
+    color: #766b65;
+    font-weight: bold;
+}
+
+.staff-bio {
+    padding-top: 1rem;
+    border-top: 1px solid #dfd0c2;
+}
+
+.site-footer {
+    background-color: #4b3225;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .about-header {
+        padding: 3.5rem 1rem;
+    }
+
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .story-image {
+        height: 260px;
+    }
+}

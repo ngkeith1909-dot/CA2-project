@@ -1,0 +1,102 @@
+body {
+    background-color: #F7EFE5;
+    color: #3B2A25;
+    font-family: Arial, sans-serif;
+}
+
+.navbar,
+.page-header,
+.site-footer {
+    background-color: #6F4E37;
+    color: white;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #FFD580 !important;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+    background-color: #F7EFE5;
+    color: #6F4E37;
+}
+
+.page-header {
+    padding: 60px 0;
+}
+
+.page-icon {
+    color: #FFD580;
+    font-size: 48px;
+}
+
+.info-card,
+.travel-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(75, 46, 43, 0.12);
+}
+
+.info-card h2 i,
+.travel-card > i {
+    color: #8B5E3C;
+}
+
+.travel-card > i {
+    font-size: 42px;
+}
+
+.hours-table th,
+.hours-table td {
+    background-color: transparent;
+    padding: 12px;
+}
+
+.today-row {
+    background-color: #FFF0CF;
+    font-weight: bold;
+}
+
+.status-badge {
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.status-open {
+    background-color: #DDF4E4;
+    color: #176B35;
+}
+
+.status-closed {
+    background-color: #F7D9D9;
+    color: #8B1E1E;
+}
+
+.btn-outline-coffee {
+    color: #6F4E37;
+    border: 1px solid #6F4E37;
+}
+
+.btn-outline-coffee:hover {
+    background-color: #6F4E37;
+    color: white;
+}
