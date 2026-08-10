@@ -37,8 +37,11 @@ body {
     color: #6F4E37;
 }
 
-.page-header {
+.page-header,
+.location-header {
     padding: 60px 0;
+    background-color: #6F4E37;
+    color: white;
 }
 
 .page-icon {
@@ -100,3 +103,69 @@ body {
     background-color: #6F4E37;
     color: white;
 }
+
+.location-header .lead {
+    max-width: 700px;
+}
+
+.section-label {
+    color: #9B5F35;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+
+.location-header .section-label {
+    color: #FFD580;
+}
+
+.status-section {
+    margin-top: 30px;
+}
+
+.status-card {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(75, 46, 43, 0.12);
+}
+
+.status-card > i {
+    font-size: 36px;
+}
+
+.map-container,
+.location-card {
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(75, 46, 43, 0.12);
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    min-height: 420px;
+    height: 100%;
+    border: 0;
+}
+
+.location-card {
+    padding: 30px;
+}
+
+.location-detail {
+    display: flex;
+    gap: 15px;
+    margin-top: 24px;
+}
+
+.location-detail > i {
+    color: #8B5E3C;
+    font-size: 24px;
+}
+
+.hours-section {
+    background-color: #FFF9F1;
+}
+

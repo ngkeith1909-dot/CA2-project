@@ -98,6 +98,14 @@ body {
     object-fit: cover;
 }
 
+.biography-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    color: #6f4e37;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 .staff-name {
     border: none;
     background: none;
@@ -123,6 +131,10 @@ body {
 .staff-bio {
     padding-top: 1rem;
     border-top: 1px solid #dfd0c2;
+}
+
+.team-section {
+    padding-bottom: 5rem !important;
 }
 
 .site-footer {
