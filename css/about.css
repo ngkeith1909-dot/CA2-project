@@ -93,8 +93,9 @@ body {
 }
 
 .staff-photo {
-    height: 250px;
-    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    object-contain: cover;
 }
 
 .staff-name {
