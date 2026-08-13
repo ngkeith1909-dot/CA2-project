@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* =========================
    MENU PAGE
 ========================= */
@@ -197,3 +198,99 @@ footer p {
         height: 180px;
     }
 }
+=======
+body {
+            background-color: #F7EFE5;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #6F4E37;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #FFD580 !important;
+        }
+
+        .dropdown-menu {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+        }
+
+        .dropdown-item:hover {
+            background-color: #F7EFE5;
+            color: #6F4E37;
+        }
+
+        .menu-container {
+            background: white;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        .menu-title {
+            color: #4B2E2B;
+            font-weight: bold;
+        }
+
+        .filter-btn {
+            background: #6F4E37;
+            color: white;
+            margin: 5px;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active-filter {
+            background: #D17B00;
+            color: white;
+        }
+
+        .menu-item {
+            background: #FFF8F2;
+            padding: 20px;
+            border-radius: 12px;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .menu-item img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: #D17B00;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #666;
+            font-style: italic;
+        }
+
+        footer {
+            background: #6F4E37;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+>>>>>>> 2496718c25fcd3a5ecef944f9ea6f94277fd9d98

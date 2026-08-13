@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
     background-color: #F7EFE5;
     color: #3B2A25;
     font-family: Arial, sans-serif;
@@ -203,3 +204,83 @@ footer p {
         margin-top: 25px;
     }
 }
+=======
+            background-color: #F7EFE5;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #6F4E37;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #FFD580 !important;
+        }
+
+        .dropdown-menu {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+        }
+
+        .dropdown-item:hover {
+            background-color: #F7EFE5;
+            color: #6F4E37;
+        }
+
+        .contact-container {
+            background-color: white;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+        }
+
+        .contact-title {
+            color: #4B2E2B;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            background-color: #6F4E37;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            height: 100%;
+        }
+
+        .contact-info i {
+            color: #FFD580;
+            margin-right: 8px;
+        }
+
+        .btn-coffee {
+            background-color: #6F4E37;
+            color: white;
+            border: none;
+        }
+
+        .btn-coffee:hover {
+            background-color: #4B2E2B;
+            color: white;
+        }
+
+        
+footer {
+            background-color: #6F4E37;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+>>>>>>> 2496718c25fcd3a5ecef944f9ea6f94277fd9d98
